@@ -1,5 +1,38 @@
-target/
-.idea/
-.metadata/
+#OS
+.DS_Store
+
+#IDEs
+
+# IntelliJ specific files/directories
+.idea
+*.ipr
+*.iws
 *.iml
+atlassian-ide-plugin.xml
+
+#XMLEditor
+*.*xml~
+
+# Eclipse specific files/directories
+.classpath
+.project
+.factorypath
+.settings
+.externalToolBuilders
+.metadata
+bin/
+
+# NetBeans specific files/directories
+.nbattrs
+
+#build
+target/
+
+#custom scripts
+*.sh
+
+#test output
+test-output/
+transaction.log
+infinispan.log
 
