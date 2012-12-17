@@ -26,8 +26,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Document extends HashMap<String, Object> {
-
+    public final static String DEFAULT_TYPE = "JSON";
     private String key = null;
+    private String type = DEFAULT_TYPE;
 
     public Document(Map<? extends String, ? extends Object> map) {
         super(map);
@@ -53,5 +54,14 @@ public class Document extends HashMap<String, Object> {
 
     public void setKey(String key) {
         this.key = key;
+    }
+
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
